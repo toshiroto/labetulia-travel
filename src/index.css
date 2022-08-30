@@ -1,22 +1,64 @@
 :root {
-  
+
   --black: #1E2328;
   --dkaqua:#357C8C;
   --aqua: #03A6A6;
   --lgaqua: #BAD9D9;
   --yellow: #F29E38;
   --white: #F2F2F2;
+  --font-size: 1.3rem;
+  --inter: Inter, Avenir;
+  --sans: Helvetica, Arial, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--white);
+  color: var(--black);
+  font-size: var(--font-size);
+}
 
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+h1, h2, h3 {
+  margin: 0;
+}
 
+a {
+  color: var(--dkaqua);
+}
+a:hover {
+  color: var(--aqua);
+  text-decoration: none;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+/* Intro Styles */
+#intro {
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro h1 {
+  font-size: 4rem;
+  color: var(--aqua);
+
+}
+#intro .name {
+  font-family: var(--inter);
 }
