@@ -5,6 +5,7 @@
   --aqua: #03A6A6;
   --lgaqua: #BAD9D9;
   --yellow: #F29E38;
+  --carmin: #8C143C;
   --white: #F2F2F2;
   --font-size: 1.3rem;
   --inter: Inter, Avenir;
@@ -43,11 +44,18 @@ a:hover {
 
 /* Intro Styles */
 #intro {
+  background-image: url(./assets/Japan_Intro.jpg);
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   padding-bottom: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 #intro p {
   font-size: 1rem;
@@ -56,9 +64,12 @@ a:hover {
 
 #intro h1 {
   font-size: 4rem;
-  color: var(--aqua);
+  color: var(--carmin);
+  margin-top: 200px;
+
 
 }
 #intro .name {
   font-family: var(--inter);
+  color: var(--white);
 }
