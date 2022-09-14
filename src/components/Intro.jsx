@@ -3,7 +3,7 @@ function Intro () {
   return (
     <section id="intro">
       <div>
-        <h1>La Betulia Travel</h1>
+        <h2>La Betulia Travel</h2>
         <p className="name">Your Path to Discover Japan <a href="https://labetulia.com"> by La Betulia </a></p>
       </div>
     </section>

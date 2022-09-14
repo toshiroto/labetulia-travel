@@ -25,7 +25,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--white);
+  background-color: var(--lgaqua);
   color: var(--black);
   font-size: var(--font-size);
 }
@@ -62,7 +62,7 @@ a:hover {
   line-height: 1.5;
 }
 
-#intro h1 {
+#intro h2  {
   font-size: 4rem;
   color: var(--carmin);
   margin-top: 200px;
@@ -72,4 +72,85 @@ a:hover {
 #intro .name {
   font-family: var(--inter);
   color: var(--white);
+}
+
+/*contact section */
+#contact {
+  width: 400px;
+  background-color: var(--lgaqua);
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+
+
+#contact h3{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#contact p {
+  font-size: 1rem;
+}
+
+#contact a {
+  color: var(--black)
+}
+
+/* Navbar */
+
+nav {
+  font-family: var(--inter);
+  font-size: 80%;
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+
+nav h1 {
+  font-family: var(--sans);
+  display: inline-block;
+  align-items: center;
+  padding: 1rem 0 0 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--dkaqua);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: var(--lgaqua);
+}
+
+nav .fa{
+  font-size: 150%;
+  color: var(--dkaqua);
+}
+nav .fa:hover {
+  color: var(--lgaqua);
+}
+
+@media (min-width: 850px;){
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
