@@ -108,10 +108,10 @@ nav {
 }
 
 
-nav h1 {
+nav h1 a{
   font-family: var(--sans);
   display: inline-block;
-  align-items: center;
+  align-items: left;
   padding: 1rem 0 0 0;
 }
 
@@ -126,6 +126,7 @@ nav ul {
   gap: 2rem;
 }
 
+
 nav a {
   color: var(--dkaqua);
   text-decoration: none;
@@ -139,7 +140,7 @@ nav .fa{
   font-size: 150%;
   color: var(--dkaqua);
 }
-nav .fa:hover {
+nav :hover {
   color: var(--lgaqua);
 }
 
