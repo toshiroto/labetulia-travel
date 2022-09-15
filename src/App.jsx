@@ -1,6 +1,7 @@
 import Intro from "./components/Intro"
 import Navbar from "./components/Navbar"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 
 
@@ -10,6 +11,7 @@ function App () {
       <Navbar />
       <Intro />
       <Contact />
+      <Footer />
     </div>
   )
 }
