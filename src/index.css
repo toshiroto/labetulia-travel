@@ -5,9 +5,11 @@
   --aqua: #03A6A6;
   --lgaqua: #BAD9D9;
   --yellow: #F29E38;
+  --lgblue: #78A6C8;
+  --silver: #D9C8CA;
   --carmin: #8C143C;
   --white: #F2F2F2;
-  --silver: #cac4cd;
+  --orange: #E65C4F;
   --font-size: 1.3rem;
   --inter: Inter, Avenir;
   --sans: Helvetica, Arial, sans-serif;
@@ -46,6 +48,9 @@ a:hover {
 /* Background Color Divs */
 .section-aqua {
   background-color: var(--lgaqua);
+}
+.section-silver {
+  background-color: var(--white);
 }
 
 /* Intro Styles */
@@ -90,25 +95,17 @@ a:hover {
 }
 
 
-#contact h3{
-  padding-bottom: 0;
-  margin-bottom: 0;
+#contact p:last-child {
+    margin-top: 3rem;
 }
 
-#contact p {
-  font-size: 1rem;
-}
-
-#contact a {
-  color: var(--dkaqua)
-}
 
 /* Navbar */
 
 nav {
   font-family: var(--inter);
   font-size: 80%;
-  padding: 4rem 1rem;
+  padding: 1rem;
 }
 
 
@@ -158,17 +155,44 @@ nav :hover {
 }
 
 .button:hover {
-  background-color: var(--silver);
+  background-color: var(--lgblue);
   color: var(--dkaqua);
 }
 
+#services {
+  padding: 4rem 1rem;
+}
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+#services h4 {
+  font-size: 1rem;
+  font-family: var(--inter);
+  margin: 0;
+}
 
+.blackbox {
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--orange);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#services img {
+    margin: 2rem 0 4rem 0;
+    padding: 1rem;
+    border-left: 1px solid var(--orange);
+    border-top: 1px solid var(--orange);
+    border-radius: 25px;
+}
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-  font-size: 70%;
+  font-size: 60%;
 
 }
 
