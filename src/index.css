@@ -7,6 +7,7 @@
   --yellow: #F29E38;
   --carmin: #8C143C;
   --white: #F2F2F2;
+  --silver: #cac4cd;
   --font-size: 1.3rem;
   --inter: Inter, Avenir;
   --sans: Helvetica, Arial, sans-serif;
@@ -25,8 +26,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--lgaqua);
-  color: var(--black);
+  background-color: var(--white);
+  color: var(--dkaqua);
   font-size: var(--font-size);
 }
 
@@ -42,10 +43,16 @@ a:hover {
   text-decoration: none;
 }
 
+/* Background Color Divs */
+.section-aqua {
+  background-color: var(--lgaqua);
+}
+
 /* Intro Styles */
 #intro {
   background-image: url(./assets/Japan_Intro.jpg);
-  height: 70%;
+  padding: 4rem 1rem 10rem 1rem;
+  margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,12 +84,10 @@ a:hover {
 /*contact section */
 #contact {
   width: 400px;
-  background-color: var(--lgaqua);
   text-align: center;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
-
 
 
 #contact h3{
@@ -95,7 +100,7 @@ a:hover {
 }
 
 #contact a {
-  color: var(--black)
+  color: var(--dkaqua)
 }
 
 /* Navbar */
@@ -103,29 +108,28 @@ a:hover {
 nav {
   font-family: var(--inter);
   font-size: 80%;
-  padding: 1rem;
-  background-color: var(--white);
-  height: 90px;
+  padding: 4rem 1rem;
 }
 
 
-nav h1 a{
+nav h1 a {
   font-family: var(--sans);
-  display: inline-block;
-  align-items: left;
-  padding: 1rem 0 0 0;
-  margin-right: auto;
 }
 
 nav ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
   display: flex;
   flex-flow: row wrap;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
 }
 
 
@@ -146,8 +150,20 @@ nav :hover {
   color: var(--lgaqua);
 }
 
-footer {
+.button {
   background-color: var(--white);
+  text-decoration: none;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: var(--silver);
+  color: var(--dkaqua);
+}
+
+
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +172,7 @@ footer {
 
 }
 
-@media (min-width: 850px;){
+@media (min-width: 850px){
   nav {
     max-width: 1200px;
     margin: 0 auto;
