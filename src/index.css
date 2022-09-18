@@ -6,7 +6,7 @@
   --lgaqua: #BAD9D9;
   --yellow: #F29E38;
   --lgblue: #78A6C8;
-  --silver: #D9C8CA;
+  --silver: #E9EEF4;
   --carmin: #8C143C;
   --white: #F2F2F2;
   --orange: #E65C4F;
@@ -50,7 +50,7 @@ a:hover {
   background-color: var(--lgaqua);
 }
 .section-silver {
-  background-color: var(--white);
+  background-color: var(--silver);
 }
 
 /* Intro Styles */
@@ -155,7 +155,7 @@ nav :hover {
 }
 
 .button:hover {
-  background-color: var(--lgblue);
+  background-color: var(--silver);
   color: var(--dkaqua);
 }
 
